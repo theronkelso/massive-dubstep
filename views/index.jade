@@ -3,3 +3,23 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  a(href='/authn/twitter') Sign in with Twitter
+  br
+  a(href='/twitter/tweet') Tweet
+  // Wrapper
+  #wrapper
+
+    // USER LIST
+    h2  User List
+    #userList
+      table
+        thead
+          th UserName
+          th Email
+          th Delete?
+        tbody
+    // /USER LIST
+
+
+
+  // /WRAPPER
