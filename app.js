@@ -54,7 +54,7 @@ function initTwitterOath(){
 function makeTweet(cb){
   oa.post(
     "https://api.twitter.com/1.1/statuses/update.json",
-    user.Token, user.TokenSecret,
+    user.token, user.tokenSecret,
   {"status":"hackday anyone?"},
     function(error, data) {
       if(error) {
